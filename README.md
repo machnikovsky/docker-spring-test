@@ -51,3 +51,8 @@ One more important thing, while deploying to Heroku, I added '-a projectname', i
 ```
 heroku container:release web -a docker-spring-test
 ```
+
+Other useful Docker commands:
+```
+docker ps - currenctly running containers
+docker stop abc - stop container that starts with abc
