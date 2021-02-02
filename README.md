@@ -25,8 +25,10 @@ commands executed at the start of application.
 
 In the application.properties we have two lines:
 
->envname=
->server.port=${PORT:8080}
+```
+envname=
+server.port=${PORT:8080}
+```
 
 envname is environmental variable, that is changed at the start "--envname=prod" in CMD in Dockerfile. server.port is
 used to know which port Spring app uses.
