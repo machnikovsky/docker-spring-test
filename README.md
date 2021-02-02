@@ -56,3 +56,4 @@ Other useful Docker commands:
 ```
 docker ps - currenctly running containers
 docker stop abc - stop container that starts with abc
+```
