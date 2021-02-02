@@ -34,3 +34,20 @@ envname is environmental variable, that is changed at the start "--envname=prod"
 used to know which port Spring app uses.
 
 App is deployed at heroku. It can be found here: [Hello endpoint](https://docker-spring-test.herokuapp.com/hello "App on Heroku")
+
+
+To create an image I used:
+```
+docker build -f Dockerfile -t dockerSpring:v1 .
+```
+
+Then, to run an image, I used:
+```
+docker run -p 8000:8080 410
+```
+Where 410 is first three characters of Image ID.
+
+One more important thing, while deploying to Heroku, I added '-a projectname', it was obligatory, but not written on Heroku page:
+```
+heroku container:release web -a docker-spring-test
+```
