@@ -8,10 +8,10 @@ make image with JDK 8 Alpine.
 
 
 
->FROM openjdk:8u191-jdk-alpine3.9
->ADD target/spring-docker-0.0.1-SNAPSHOT.jar .
->EXPOSE 8000
->CMD java -jar spring-docker-0.0.1-SNAPSHOT.jar --envname=prod
+`FROM openjdk:8u191-jdk-alpine3.9
+ADD target/spring-docker-0.0.1-SNAPSHOT.jar .
+EXPOSE 8000
+CMD java -jar spring-docker-0.0.1-SNAPSHOT.jar --envname=prod`
 
 We start with "FROM" and we take image from DockerHub we
 want to append to our image. In this case we want to use
